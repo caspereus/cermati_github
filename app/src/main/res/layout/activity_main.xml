@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.ndroid.CoolEditText
+            android:id="@+id/etSearch"
+            style="@style/searchSmall"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawablePadding="@dimen/padding_10"
+            android:hint="@string/title_search"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_basic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutSearch" />
+
+    <include
+        android:visibility="gone"
+        layout="@layout/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutSearch" />
+
+    <include
+        layout="@layout/loading_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutSearch"
+        android:visibility="invisible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutSearch"
+        android:visibility="gone" />
+
+</RelativeLayout>

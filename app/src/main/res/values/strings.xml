@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Putu Cermati</string>
+    <string name="title_search">Search User</string>
+    <string name="search_title_result">Find Github User Now</string>
+    <string name="github_user_name">Github User Name</string>
+    <string name="users_not_found">Users not found!</string>
+</resources>

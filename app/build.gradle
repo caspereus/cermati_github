@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.cermati.putu"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:$android_ktx_version"
+    implementation "androidx.appcompat:appcompat:$appcombat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$junit_ext_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+
+
+    // UI
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerView_version"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    // Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // Retrofit and Gson & okhttp3
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // Kodein Dependency Injection
+    implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
+    implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
+
+    // Koin
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+
+    //Library EditText
+    implementation "com.ndroid:cool-view:$cool_view_version"
+
+    //Library Material Design
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_version"
+    implementation "androidx.vectordrawable:vectordrawable:$vector_drawable_version"
+
+    //Shimmer
+    implementation "com.facebook.shimmer:shimmer:$shimmer_version"
+
+    //Dexter Request Permission
+    implementation "com.karumi:dexter:$dexter_version"
+
+    //Timber Log
+    implementation "com.jakewharton.timber:timber:$timber_version"
+
+    //Library RxJava
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
+    implementation "com.jakewharton.rxbinding3:rxbinding:$rx_binding_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rx_java_adapter_version"
+
+    //Library Image
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+    implementation "de.hdodenhof:circleimageview:$circle_image_version"
+
+
+    //SearchView
+    implementation "com.miguelcatalan:materialsearchview:$search_view_version"
+
+}

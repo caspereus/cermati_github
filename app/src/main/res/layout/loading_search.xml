@@ -18,7 +18,7 @@
             <View
                 android:layout_width="@dimen/size_220"
                 android:layout_weight="1"
-                android:layout_height="@dimen/size_50"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -29,9 +29,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -42,9 +42,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -55,9 +55,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -68,9 +68,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -81,9 +81,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -94,9 +94,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -107,9 +107,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 
@@ -120,61 +120,9 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
                 android:layout_width="@dimen/size_220"
-                android:background="@drawable/placeholder_round" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_height="@dimen/size_50"
                 android:layout_weight="1"
-                android:layout_width="@dimen/size_220"
-                android:background="@drawable/placeholder_round" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
-                android:layout_width="@dimen/size_220"
-                android:background="@drawable/placeholder_round" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
-                android:layout_width="@dimen/size_220"
-                android:background="@drawable/placeholder_round" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_height="@dimen/size_50"
-                android:layout_weight="1"
-                android:layout_width="@dimen/size_220"
+                android:layout_height="@dimen/size_80"
                 android:background="@drawable/placeholder_round" />
         </LinearLayout>
 

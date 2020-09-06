@@ -3,20 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/size_80"
     android:gravity="center"
-    android:orientation="horizontal"
-    android:padding="@dimen/padding_10">
+    android:orientation="vertical">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/civUser"
-        android:layout_width="@dimen/size_60"
-        android:layout_height="@dimen/size_60"
-        android:src="@color/placeholder_bg" />
-
-    <TextView
-        android:id="@+id/tvNameUser"
+    <LinearLayout
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_10"
-        android:text="@string/github_user_name" />
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civUser"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"
+            android:src="@color/placeholder_bg" />
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:text="@string/github_user_name" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1" />
+
 
 </LinearLayout>

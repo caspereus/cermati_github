@@ -1,4 +1,4 @@
-# Cermati Github
+# Simple Architecture
 
 
 Application for searching github users,feature : 
